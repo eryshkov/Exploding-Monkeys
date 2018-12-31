@@ -12,8 +12,20 @@ import GameplayKit
 
 class GameViewController: UIViewController {
 
+    //MARK: -
+    @IBOutlet weak var angleSlider: UISlider!
+    @IBOutlet weak var angleLabel: UILabel!
+    
+    @IBOutlet weak var velocitySlider: UISlider!
+    @IBOutlet weak var velocityLabel: UILabel!
+    
+    @IBOutlet weak var launchButton: UIButton!
+    @IBOutlet weak var playerNumber: UILabel!
+    
+    //MARK: -
     var currentGame: GameScene!
     
+    //MARK: -
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -49,7 +61,18 @@ class GameViewController: UIViewController {
         }
     }
 
+    //MARK: -
     override var prefersStatusBarHidden: Bool {
         return true
     }
+    
+    @IBAction func angleChanged(_ sender: UISlider) {
+    }
+    
+    @IBAction func velocityChanged(_ sender: UISlider) {
+    }
+    
+    @IBAction func launch(_ sender: UIButton) {
+    }
+    
 }

@@ -20,18 +20,14 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Lz-J5-k5C">
                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="80"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GIf-ZL-So5">
-                                        <rect key="frame" x="916" y="20.5" width="92" height="39"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
-                                        <state key="normal" title="LAUNCH">
-                                            <color key="titleColor" name="systemRedColor" catalog="System" colorSpace="catalog"/>
-                                        </state>
-                                    </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Y4H-b9-rt5">
                                         <rect key="frame" x="16" y="25" width="403" height="30"/>
                                         <subviews>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="45" minValue="0.0" maxValue="90" translatesAutoresizingMaskIntoConstraints="NO" id="Ndv-LT-fpE">
                                                 <rect key="frame" x="-2" y="0.0" width="360" height="31"/>
+                                                <connections>
+                                                    <action selector="angleChanged:" destination="BV1-FR-VrT" eventType="valueChanged" id="dE0-SM-F1c"/>
+                                                </connections>
                                             </slider>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6TX-eu-2e1">
                                                 <rect key="frame" x="361" y="0.0" width="42" height="30"/>
@@ -46,6 +42,9 @@
                                         <subviews>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="125" minValue="0.0" maxValue="250" translatesAutoresizingMaskIntoConstraints="NO" id="h4U-hj-bgG">
                                                 <rect key="frame" x="-2" y="0.0" width="380" height="31"/>
+                                                <connections>
+                                                    <action selector="velocityChanged:" destination="BV1-FR-VrT" eventType="valueChanged" id="eIm-cq-Pxs"/>
+                                                </connections>
                                             </slider>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9iA-vR-VHQ">
                                                 <rect key="frame" x="381" y="0.0" width="42" height="30"/>
@@ -55,6 +54,16 @@
                                             </label>
                                         </subviews>
                                     </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GIf-ZL-So5">
+                                        <rect key="frame" x="916" y="20.5" width="92" height="39"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                        <state key="normal" title="LAUNCH">
+                                            <color key="titleColor" name="systemRedColor" catalog="System" colorSpace="catalog"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="launch:" destination="BV1-FR-VrT" eventType="touchUpInside" id="LOI-xk-QI8"/>
+                                        </connections>
+                                    </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&lt;&lt;&lt;PLAYER ONE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1RT-oP-msD">
                                         <rect key="frame" x="369.5" y="45" width="285" height="35"/>
                                         <constraints>
@@ -90,6 +99,14 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="4qk-I5-YsI"/>
                     </view>
+                    <connections>
+                        <outlet property="angleLabel" destination="6TX-eu-2e1" id="mue-1L-W75"/>
+                        <outlet property="angleSlider" destination="Ndv-LT-fpE" id="aD3-0F-9C3"/>
+                        <outlet property="launchButton" destination="GIf-ZL-So5" id="a1t-Hf-wTu"/>
+                        <outlet property="playerNumber" destination="1RT-oP-msD" id="F1k-F5-fEP"/>
+                        <outlet property="velocityLabel" destination="9iA-vR-VHQ" id="GQh-fU-pgv"/>
+                        <outlet property="velocitySlider" destination="h4U-hj-bgG" id="L2m-sF-QJn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
             </objects>
