@@ -17,6 +17,9 @@
 
 ## Main functionality
 * simple sprite kit game from 90's
+* uses `texture atlases`
+* uses `scene transitions`
+* uses `destructible terrain`
 
 ## License
 

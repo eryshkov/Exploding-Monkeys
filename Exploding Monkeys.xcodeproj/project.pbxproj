@@ -37,6 +37,7 @@
 		5C00799821DA777000D30451 /* Assets.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Assets.atlas; sourceTree = "<group>"; };
 		5C00799A21DA78AE00D30451 /* hitBuilding.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = hitBuilding.sks; sourceTree = "<group>"; };
 		5C00799B21DA78AE00D30451 /* hitPlayer.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = hitPlayer.sks; sourceTree = "<group>"; };
+		5C00799E21DA907A00D30451 /* 1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +116,7 @@
 		5C00799721DA211A00D30451 /* screens */ = {
 			isa = PBXGroup;
 			children = (
+				5C00799E21DA907A00D30451 /* 1.jpeg */,
 			);
 			path = screens;
 			sourceTree = "<group>";
