@@ -26,6 +26,27 @@ class GameViewController: UIViewController {
     var currentGame: GameScene!
     
     //MARK: -
+    func activatePlayer(number: Int) {
+        if number == 1 {
+            playerNumber.text = "<<< PLAYER ONE"
+        }else{
+            playerNumber.text = "PLAYER TWO >>>"
+        }
+        
+        hideControls(hide: false)
+    }
+    
+    fileprivate func hideControls(hide: Bool) {
+        angleSlider.isHidden = hide
+        angleLabel.isHidden = hide
+        
+        velocitySlider.isHidden = hide
+        velocityLabel.isHidden = hide
+        
+        launchButton.isHidden = hide
+    }
+    
+    //MARK: -
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -78,13 +99,7 @@ class GameViewController: UIViewController {
     }
     
     @IBAction func launch(_ sender: UIButton) {
-        angleSlider.isHidden = true
-        angleLabel.isHidden = true
-        
-        velocitySlider.isHidden = true
-        velocityLabel.isHidden = true
-        
-        launchButton.isHidden = true
+        hideControls(hide: true)
         
         currentGame.launch(angle: Int(angleSlider.value), velocity: Int(velocitySlider.value))
     }
