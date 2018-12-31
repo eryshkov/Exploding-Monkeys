@@ -30,6 +30,7 @@
 		5C00798721DA123600D30451 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5C00798F21DA135000D30451 /* BuildingNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildingNode.swift; sourceTree = "<group>"; };
 		5C00799421DA15E200D30451 /* CollisionTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollisionTypes.swift; sourceTree = "<group>"; };
+		5C00799621DA211200D30451 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +47,8 @@
 		5C00796921DA123500D30451 = {
 			isa = PBXGroup;
 			children = (
+				5C00799721DA211A00D30451 /* screens */,
+				5C00799621DA211200D30451 /* README.md */,
 				5C00799321DA156600D30451 /* Model */,
 				5C00799221DA155E00D30451 /* View */,
 				5C00799121DA155300D30451 /* Controller */,
@@ -98,6 +101,13 @@
 				5C00799421DA15E200D30451 /* CollisionTypes.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		5C00799721DA211A00D30451 /* screens */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = screens;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
