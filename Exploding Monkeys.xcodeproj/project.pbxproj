@@ -16,6 +16,9 @@
 		5C00798621DA123600D30451 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C00798421DA123600D30451 /* LaunchScreen.storyboard */; };
 		5C00799021DA135000D30451 /* BuildingNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C00798F21DA135000D30451 /* BuildingNode.swift */; };
 		5C00799521DA15E200D30451 /* CollisionTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C00799421DA15E200D30451 /* CollisionTypes.swift */; };
+		5C00799921DA777000D30451 /* Assets.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 5C00799821DA777000D30451 /* Assets.atlas */; };
+		5C00799C21DA78AE00D30451 /* hitBuilding.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5C00799A21DA78AE00D30451 /* hitBuilding.sks */; };
+		5C00799D21DA78AE00D30451 /* hitPlayer.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5C00799B21DA78AE00D30451 /* hitPlayer.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +34,9 @@
 		5C00798F21DA135000D30451 /* BuildingNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildingNode.swift; sourceTree = "<group>"; };
 		5C00799421DA15E200D30451 /* CollisionTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollisionTypes.swift; sourceTree = "<group>"; };
 		5C00799621DA211200D30451 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		5C00799821DA777000D30451 /* Assets.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Assets.atlas; sourceTree = "<group>"; };
+		5C00799A21DA78AE00D30451 /* hitBuilding.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = hitBuilding.sks; sourceTree = "<group>"; };
+		5C00799B21DA78AE00D30451 /* hitPlayer.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = hitPlayer.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				5C00797521DA123500D30451 /* AppDelegate.swift */,
+				5C00799821DA777000D30451 /* Assets.atlas */,
 				5C00798221DA123600D30451 /* Assets.xcassets */,
 				5C00798721DA123600D30451 /* Info.plist */,
 			);
@@ -89,6 +96,8 @@
 			children = (
 				5C00798421DA123600D30451 /* LaunchScreen.storyboard */,
 				5C00797F21DA123500D30451 /* Main.storyboard */,
+				5C00799A21DA78AE00D30451 /* hitBuilding.sks */,
+				5C00799B21DA78AE00D30451 /* hitPlayer.sks */,
 				5C00797721DA123500D30451 /* GameScene.sks */,
 				5C00798F21DA135000D30451 /* BuildingNode.swift */,
 			);
@@ -168,10 +177,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C00799D21DA78AE00D30451 /* hitPlayer.sks in Resources */,
 				5C00798121DA123500D30451 /* Main.storyboard in Resources */,
 				5C00797821DA123500D30451 /* GameScene.sks in Resources */,
+				5C00799921DA777000D30451 /* Assets.atlas in Resources */,
 				5C00798321DA123600D30451 /* Assets.xcassets in Resources */,
 				5C00798621DA123600D30451 /* LaunchScreen.storyboard in Resources */,
+				5C00799C21DA78AE00D30451 /* hitBuilding.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
