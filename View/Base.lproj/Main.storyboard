@@ -64,7 +64,7 @@
                                             <action selector="launch:" destination="BV1-FR-VrT" eventType="touchUpInside" id="LOI-xk-QI8"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&lt;&lt;&lt;PLAYER ONE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1RT-oP-msD">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&lt;&lt;&lt; PLAYER ONE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1RT-oP-msD">
                                         <rect key="frame" x="369.5" y="45" width="285" height="35"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="35" id="fSZ-UC-0lb"/>
