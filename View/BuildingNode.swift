@@ -13,6 +13,10 @@ class BuildingNode: SKSpriteNode {
     
     var currentImage: UIImage!
     
+    func hitAt(point: CGPoint) {
+        
+    }
+    
     func drawBuilding(size: CGSize) -> UIImage {
         
         let renderer = UIGraphicsImageRenderer(size: size)
