@@ -12,6 +12,7 @@ import GameplayKit
 class GameScene: SKScene {
     
     var buildings = [BuildingNode]()
+    weak var viewController: GameViewController!
     
     //MARK: -
     func createBuildings() {
